@@ -1,0 +1,39 @@
+/* TEAM */
+	Desarrolladores: Mª Virginia Rivas
+	Profesión: Periodista
+	Contacto: mariav53[at]gmail.com
+	Ciudad: Madrid
+	
+	Desarrolladores: Eva González
+	Profesión: E-learning
+	Contacto: evamgonzalezn[at]gmail.com
+	Ciudad: Madrid
+
+	Desarrolladores: Carla Écija
+	Profesión: Ambientóloga 
+	Contacto: karlaecija[at]gmail.com	
+	Ciudad: Madrid
+
+	Desarrolladores: Álvaro Gil
+	Profesión: Técnico de sonido
+	Contacto: alvarogil91[at]gmail.com
+	Ciudad: Madrid
+
+	Desarrolladores: Carlos de Miguel
+	Profesión: Programador Junior PHP
+	Contacto: carlosdmm93[at]gmail.com	
+	Ciudad: Madrid	
+
+/* SITE */
+	Last update: 2017/2/08
+	Idioma: Spanish
+	Standards: HTML5, CSS3, PHP, MySql, JavaScript.
+	Software utilizado para el desarrollo:Sublime Text, FileZilla, Xampp.
+	
+
+/* THANKS */ 
+Name: Marc Barcelo (mbarcelo[at]itteria.cat)
+Name: Diego Collado  
+	
+
+	
