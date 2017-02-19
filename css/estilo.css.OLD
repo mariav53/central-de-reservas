@@ -1,0 +1,38 @@
+body{
+	overflow-x: hidden;
+}
+
+#inicio{
+	margin-top: 10%;
+	margin-right: 0;
+}
+
+.titulo {
+	text-align: center;
+	padding-bottom: 5%;
+	font-size: 1.8em;
+}
+
+#nocliente .titulo{
+	padding-bottom: 7%;
+
+}
+
+#nocliente p {
+    padding-bottom: 8%;
+    font-size: 1.2em;
+}
+
+#butt{
+	display: block;
+	text-align: center;
+	width: 30%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+#registro{
+	margin-right: 0 !important;
+}
+
