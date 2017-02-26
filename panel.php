@@ -122,16 +122,16 @@ if ($_SESSION['privilegios']>=2){
 
 
 <div class="row fila_panel">
-    <div class="col-md-4 col-sm-4 col-xs-12 panel">
-        <form id="default" action="" method="post">
+    <div class="col-md-4 panel">
+        <form id="default1" action="" method="post">
             <i class="fa fa-calendar fa-4x" aria-hidden="true"></i>
             <hr>
         <button type="submit" class="btn btn-mio1 butt" name="reservas">Reservas</button>              
         </form>                
     </div>
 
-    <div class="col-md-4 col-sm-4 col-xs-12 panel">
-         <form action="" method="post">
+    <div class="col-md-4 panel">
+         <form id="default1" action="" method="post">
             <i class="fa fa-folder fa-4x" aria-hidden="true"></i>
             <hr>
             <button type="submit" class="btn btn-mio1 butt" name="salas">Salas</button>   
@@ -140,8 +140,8 @@ if ($_SESSION['privilegios']>=2){
     
     <?php
     if($_SESSION["privilegios"]==3){
-        echo('<div class="col-md-4 col-sm-4 col-xs-12 panel">
-        <form action="" method="post">
+        echo('<div class="col-md-4 panel">
+        <form action="" method="post" id="default1">
             <i class="fa fa-users fa-4x" aria-hidden="true"></i>
             <hr>
             <button type="submit" class="btn btn-mio1 butt" name="usuarioslista">Usuarios</button>   
@@ -151,7 +151,7 @@ if ($_SESSION['privilegios']>=2){
     ?>
 </div>
     
-    
+<div class="row fila_panel1">    
     <?php
         if(isset($_POST['reservas']) || (!isset($_POST['reservas']) && !isset($_POST['salas']) && !isset($_POST['usuarioslista']))){
             $contador = 0;
@@ -164,7 +164,7 @@ if ($_SESSION['privilegios']>=2){
                 
                         if((isset($_SESSION["privilegios"]) && ($_SESSION["privilegios"]==3)) || (isset($_SESSION["privilegios"]) && ($_SESSION["privilegios"]==2 && ($_SESSION['usuario'] == $arraysalas['propietario']))))
                         {
-                            echo("<a class='titulo_panelad' data-toggle='collapse' data-target='#acordeon".$contador."'>".$arraysalas['nombre']."</a>");
+                            echo("<i class='fa fa-arrow-right' aria-hidden='true'></i> <a class='titulo_panelad' data-toggle='collapse' data-target='#acordeon".$contador."'>".$arraysalas['nombre']."</a>");
 
                             echo ("<div id='acordeon".$contador."' class='collapse'><table class='table table-striped tabla_admin'><thead><th><b>ID</b></th><th><b>Reservado por</b></th><th><b>Desde</b></th><th><b>Hasta</b></th><th></th></thead>");
                             while($arrayreservas = $bbddreservas -> fetch_assoc()){  
@@ -178,7 +178,7 @@ if ($_SESSION['privilegios']>=2){
                     else{
                         if((isset($_SESSION["privilegios"]) && ($_SESSION["privilegios"]==3)) || (isset($_SESSION["privilegios"]) && ($_SESSION["privilegios"]==2 && ($_SESSION['usuario'] == $arraysalas['propietario']))))
                         {
-                            echo("<a class='titulo_panelad' data-toggle='collapse' data-target='#acordeon".$contador."'>".$arraysalas['nombre']."</a>");
+                            echo("<i class='fa fa-arrow-right' aria-hidden='true'></i> <a class='titulo_panelad' data-toggle='collapse' data-target='#acordeon".$contador."'>".$arraysalas['nombre']."</a>");
 
                             echo ("<div id='acordeon".$contador."' class='collapse'><table class='table table-striped tabla_admin'><thead><th><b>ID</b></th><th><b>Materiales</b></th><th><b>Reservado por</b></th><th><b>Desde</b></th><th><b>Hasta</b></th><th></th></thead>");
                             while($arrayreservas = $bbddmateriales -> fetch_assoc()){  
@@ -198,6 +198,7 @@ if ($_SESSION['privilegios']>=2){
 
     ?>  
 
+</div>
 
 <?php
 
