@@ -1,4 +1,4 @@
-# Final project from "Empleo Digital" Program: PHP Web Development course
+# Final project from ["Empleo Digital"](https://empleodigitalformacion.fundaciontelefonica.com/) Program: PHP Web Development course
 Este proyecto se basó en la el diseño y desarrollo de una central de reservas de salas para centro educativos. Empresa colaboradora: [Seidor](http://www.seidor.es/content/seidorweb/es.html).
 
 Demo en el siguiente [link](http://centraldereservas.hol.es/)
